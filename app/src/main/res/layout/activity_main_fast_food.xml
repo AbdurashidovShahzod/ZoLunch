@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".uifast.MainFastFoodActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fastMenuBtn"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/fast_btn_shape"
+        android:text="Menu"
+        android:textColor="@color/white"
+        android:textSize="14sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/fastFoodAddBtn"
+        android:layout_width="220dp"
+        android:layout_height="70dp"
+        android:background="@drawable/fast_btn_shape"
+        android:text="Taom qo'shish"
+        android:textColor="@color/white"
+        android:textSize="14sp">
+
+    </androidx.appcompat.widget.AppCompatButton>
+
+</LinearLayout>

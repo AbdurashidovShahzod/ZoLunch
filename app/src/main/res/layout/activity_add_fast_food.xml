@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".uifast.AddFastFoodActivity">
+
+
+    <EditText
+        android:id="@+id/nameFastFood"
+        android:layout_width="304dp"
+        android:layout_height="55dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="sans-serif"
+        android:hint="Taom nomi"
+        android:padding="18dp"
+        android:textColor="#75000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <EditText
+        android:id="@+id/requiredProducts"
+        android:layout_width="304dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="sans-serif"
+        android:hint="Kerakli maxsulotlar "
+        android:padding="18dp"
+        android:textColor="#75000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameFastFood" />
+
+    <EditText
+        android:id="@+id/cookingProcedure"
+        android:layout_width="304dp"
+        android:layout_height="274dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_shape"
+        android:fontFamily="sans-serif"
+        android:hint="Taom tayyorlanish tartibi"
+        android:padding="18dp"
+        android:textColor="#75000000"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/requiredProducts" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/saveBtn"
+        android:layout_width="136dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="12dp"
+        android:background="@color/color_name"
+        android:text="Saqlash"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/guidLine1"
+        app:layout_constraintRight_toRightOf="@id/cookingProcedure" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLine1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.95" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
