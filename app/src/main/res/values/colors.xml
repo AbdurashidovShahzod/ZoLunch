@@ -9,5 +9,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="color_name">#22E286</color>
+    <color name="color_fast_food">#22E286</color>
+    <color name="color_contact">#E5F96F</color>
 </resources>

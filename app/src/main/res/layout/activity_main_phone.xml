@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".uifast.MainFastFoodActivity">
+    tools:context=".uiphone.ui.main.phone.MainPhoneActivity">
 
 
     <androidx.appcompat.widget.AppCompatButton
