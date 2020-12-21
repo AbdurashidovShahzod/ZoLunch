@@ -7,7 +7,7 @@ import android.util.Log
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_all_fast_food.*
-import uz.pdp.loginui.model.FastFood
+import uz.unzosoft.zolunch.models.FastFood
 import uz.unzosoft.zolunch.R
 import uz.unzosoft.zolunch.adapters.FastFoodAdapter
 import uz.unzosoft.zolunch.data.SharedPreferenceUI

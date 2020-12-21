@@ -6,7 +6,7 @@ import android.content.SharedPreferences
 object SharedPreferenceUI {
     private const val NAME = "login"
     private const val MODE = Context.MODE_PRIVATE
-    private lateinit var sharedPreferences: SharedPreferences
+    lateinit var sharedPreferences: SharedPreferences
 
     fun init(context: Context) {
         sharedPreferences = context.getSharedPreferences(NAME, MODE)
@@ -20,6 +20,7 @@ object SharedPreferenceUI {
 
     fun clearData() {
         fastFood = ""
+        phoneString = ""
     }
 
     var text: String?
@@ -43,6 +44,14 @@ object SharedPreferenceUI {
         set(value) = sharedPreferences.edit() {
             if (value != null) {
                 it.putString("fast", value)
+            }
+        }
+
+    var phoneString: String?
+        get() = sharedPreferences.getString("phone", "")
+        set(value) = sharedPreferences.edit() {
+            if (value != null) {
+                it.putString("phone", value)
             }
         }
 

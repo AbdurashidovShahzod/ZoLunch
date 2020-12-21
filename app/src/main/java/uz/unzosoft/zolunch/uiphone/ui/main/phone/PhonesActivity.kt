@@ -1,5 +1,6 @@
 package uz.unzosoft.zolunch.uiphone.ui.main.phone
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_phones.*
@@ -18,6 +19,11 @@ class PhonesActivity : AppCompatActivity() {
         initData()
         adapter = PhoneAdapter2(this, list)
         gv.adapter = adapter
+        gv.setOnItemClickListener { adapterView, view, i, l ->
+            var intent = Intent(this, PhoneListActivity::class.java)
+            intent.putExtra("listPhone", list[i].phoneName)
+            startActivity(intent)
+        }
 
     }
 

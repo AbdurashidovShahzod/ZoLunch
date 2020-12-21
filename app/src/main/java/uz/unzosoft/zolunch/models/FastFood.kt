@@ -1,4 +1,4 @@
-package uz.pdp.loginui.model
+package uz.unzosoft.zolunch.models
 
 import java.io.Serializable
 

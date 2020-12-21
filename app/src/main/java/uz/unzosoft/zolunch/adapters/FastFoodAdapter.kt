@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import kotlinx.android.synthetic.main.all_fast_food_item.view.*
-import uz.pdp.loginui.model.FastFood
+import uz.unzosoft.zolunch.models.FastFood
 import uz.unzosoft.zolunch.R
 
 class FastFoodAdapter(context: Context, var list: List<FastFood>) :
