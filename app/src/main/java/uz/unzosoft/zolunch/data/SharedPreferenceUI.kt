@@ -20,7 +20,7 @@ object SharedPreferenceUI {
 
     fun clearData() {
         fastFood = ""
-        phoneString = ""
+//        phoneString = ""
     }
 
     var text: String?

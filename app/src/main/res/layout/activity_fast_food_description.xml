@@ -21,11 +21,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_margin="8dp"
+                android:layout_margin="10dp"
                 android:padding="8dp"
                 android:text="Palov"
                 android:textColor="@color/black"
-                android:textSize="26sp" />
+                android:textSize="20sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -35,7 +35,7 @@
                 android:padding="8dp"
                 android:text="Kerakli maxsulotlar"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tvDescRequired"
@@ -46,7 +46,7 @@
                 android:padding="8dp"
                 android:text="6-7 dona kattaroq sabzi 0,5 kg go’sht 1 ta piyoz 3 cho’mich yog’ dumba 700 gr guruch. ( oilada 4 kishimiz shiga mo’ljallab qildim) zira"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -56,7 +56,7 @@
                 android:padding="8dp"
                 android:text="Taom tayyorlanish tartibi"
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="16sp" />
 
 
             <TextView
@@ -68,7 +68,7 @@
                 android:padding="8dp"
                 android:text="Avval ishni qizib turgan qozonga dumbani to’g’rab soldim, uni yog’i chiqgandan so’ng jizzalarini ovoldim. Ustiga 3 cho’mich yog’ soldim. Keyin piyozni kattaroq qilib yarim parrak qilib to’g’rab soldim. Ketidan go’shtni ham soldim. Go’sht tuzlangan bo’lsa yaxshi, agar tuzlanmagan bo’lsa yaxshilab tuz sepib keyin yog’ga solsak go’shtga maza kirib qovriladi. Buvim shunday der edilar. Man oshga go’shtni tuzlab qo’yaman, bir ikki kun avval. Palovimizni rangi piyozimizni qovirishimizga bog’liq. Oilamga qoraroq osh yoqadi, shuning uchun piyoz qizarguncha sabzilarni to’radim."
                 android:textColor="@color/black"
-                android:textSize="23sp" />
+                android:textSize="16sp" />
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
