@@ -25,7 +25,7 @@ class AddFastFoodActivity : AppCompatActivity() {
         saveBtn.setOnClickListener {
             val name = nameFastFood.text.toString()
             val required = requiredProducts.text.toString()
-            val cooking = cookingProcedure.text.toString()
+            val cooking = nameFeaturesBtn.text.toString()
             val fastFood1 = SharedPreferenceUI.fastFood
 
 

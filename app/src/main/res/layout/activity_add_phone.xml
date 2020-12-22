@@ -4,58 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
-    android:orientation="vertical"
     tools:context=".uiphone.ui.main.phone.AddPhoneActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAllList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/guide_line1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_contact">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="35dp"
+                android:gravity="left|center"
+                android:text="Add phone"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
 
     <EditText
         android:id="@+id/namePhoneBtn"
-        android:layout_width="304dp"
+        android:layout_width="324dp"
         android:layout_height="55dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edit_shape"
-        android:fontFamily="sans-serif"
-        android:hint="Phone name"
-        android:padding="18dp"
-        android:textColor="#75000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.2" />
+        android:gravity="left|center"
+        android:hint="Taom nomi"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/nameFeaturesBtn"
+        app:layout_constraintLeft_toLeftOf="@id/nameFeaturesBtn"
+        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="246dp" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide_line4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85" />
 
     <EditText
         android:id="@+id/nameFeaturesBtn"
-        android:layout_width="304dp"
+        android:layout_width="324dp"
         android:layout_height="365dp"
-        android:layout_marginTop="25dp"
         android:background="@drawable/edit_shape"
-        android:fontFamily="sans-serif"
-        android:hint="Phone features"
-        android:padding="18dp"
-        android:textColor="#75000000"
+        android:gravity="left|top"
+        android:hint="Taom tayyorlash tartibi"
+        android:padding="18sp"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@id/guide_line4"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/namePhoneBtn" />
+        app:layout_constraintTop_toBottomOf="@id/guide_line3" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/addContactBtn"
         android:layout_width="136dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="12dp"
-        android:background="@color/color_contact"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/phone_btn_shape"
         android:text="Add"
+        android:textAllCaps="false"
         android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="@id/guidLine1"
-        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn" />
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidLine1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.95" />
+        android:textSize="15sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn"
+        app:layout_constraintTop_toBottomOf="@id/guide_line4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

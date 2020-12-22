@@ -4,18 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="15dp"
-    android:gravity="center"
-    android:padding="10dp"
+    android:orientation="vertical"
     tools:context=".uiphone.ui.main.phone.PhonesActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardAll"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_contact">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="27dp"
+                android:gravity="left|center"
+                android:text="Phones"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="normal" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
 
     <GridView
         android:id="@+id/gv"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:columnWidth="2dp"
         android:gravity="center"
-        android:numColumns="2" />
+        android:numColumns="2"
+        app:layout_constraintTop_toBottomOf="@id/cardAllList" />
 
 </LinearLayout>

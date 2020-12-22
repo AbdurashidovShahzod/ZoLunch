@@ -39,7 +39,7 @@
         app:layout_constraintTop_toBottomOf="@id/nameFastFood" />
 
     <EditText
-        android:id="@+id/cookingProcedure"
+        android:id="@+id/nameFeaturesBtn"
         android:layout_width="304dp"
         android:layout_height="274dp"
         android:layout_marginTop="15dp"
@@ -62,7 +62,7 @@
         android:textColor="@color/white"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/guidLine1"
-        app:layout_constraintRight_toRightOf="@id/cookingProcedure" />
+        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn" />
 
 
     <androidx.constraintlayout.widget.Guideline

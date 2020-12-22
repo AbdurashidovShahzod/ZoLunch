@@ -45,6 +45,7 @@ class PhoneListActivity : AppCompatActivity() {
         if (phone != "") {
             val extras = intent.extras
             val name = extras!!.getString("listPhone")
+            tvV.text = name.toString()
 
 
             val type = object : TypeToken<List<PhoneU>>() {}.type
