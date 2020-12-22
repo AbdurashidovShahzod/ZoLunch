@@ -14,7 +14,7 @@
         app:layout_constraintGuide_percent="0.09" />
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/card1"
+        android:id="@+id/cardAllList"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@id/guide_line1"
@@ -63,7 +63,7 @@
         app:layout_constraintBottom_toTopOf="@id/guide_line2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card1" />
+        app:layout_constraintTop_toBottomOf="@id/cardAllList" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guide_line3"
