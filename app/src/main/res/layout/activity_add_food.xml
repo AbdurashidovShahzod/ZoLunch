@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.08" />
+        app:layout_constraintGuide_percent="0.09" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
@@ -25,7 +25,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="#22E286">
+            android:background="@color/color_fast_food">
 
             <TextView
 
@@ -53,7 +53,7 @@
         android:id="@+id/nameFastFood"
         android:layout_width="330dp"
         android:layout_height="55dp"
-        android:background="#CDCCCC"
+        android:background="@drawable/edit_shape"
         android:gravity="left|center"
         android:hint="Taom nomi"
         android:padding="15dp"
@@ -76,7 +76,7 @@
         android:id="@+id/requiredProducts"
         android:layout_width="330dp"
         android:layout_height="125dp"
-        android:background="#CDCCCC"
+        android:background="@drawable/edit_shape"
         android:gravity="left|top"
         android:hint="Kerakli maxsulotlar"
         android:padding="15dp"
@@ -99,10 +99,10 @@
         android:id="@+id/cookingProcedure"
         android:layout_width="330dp"
         android:layout_height="235dp"
-        android:background="#CDCCCC"
+        android:background="@drawable/edit_shape"
         android:gravity="left|top"
         android:hint="Taom tayyorlash tartibi"
-        android:padding="20dp"
+        android:padding="18sp"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="normal"
@@ -115,11 +115,11 @@
         android:id="@+id/saveBtn"
         android:layout_width="136dp"
         android:layout_height="50dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="11dp"
         android:background="@drawable/fast_btn_shape"
         android:text="Saqlash"
         android:textAllCaps="false"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:textSize="15sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="parent"
