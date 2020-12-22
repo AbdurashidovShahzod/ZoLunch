@@ -18,7 +18,7 @@ class AddFastFoodActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_fast_food)
+        setContentView(R.layout.activity_add_food)
         SharedPreferenceUI.init(this)
         gson = Gson()
 
