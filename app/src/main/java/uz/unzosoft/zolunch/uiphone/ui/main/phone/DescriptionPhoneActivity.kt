@@ -15,6 +15,7 @@ class DescriptionPhoneActivity : AppCompatActivity() {
 
         tvDescPhoneName.text = name
         tvDescPhone.text = description
+        tvV3.text = name
 
     }
 }
