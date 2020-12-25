@@ -34,6 +34,7 @@ class PhoneListActivity : AppCompatActivity() {
             intent.putExtra("descriptionName", listNew[i].namePhone)
             intent.putExtra("descriptionFeatures", listNew[i].features)
             startActivity(intent)
+
         }
 
 

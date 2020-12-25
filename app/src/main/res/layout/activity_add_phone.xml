@@ -1,23 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".uiphone.ui.main.phone.AddPhoneActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_line1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.09" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardAllList"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@id/guide_line1"
+        android:layout_height="60dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -41,66 +35,56 @@
     </androidx.cardview.widget.CardView>
 
 
-    <EditText
-        android:id="@+id/namePhoneBtn"
-        android:layout_width="324dp"
-        android:layout_height="55dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/edit_shape"
-        android:gravity="left|center"
-        android:hint="Taom nomi"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@id/nameFeaturesBtn"
-        app:layout_constraintLeft_toLeftOf="@id/nameFeaturesBtn"
-        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_line3"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="246dp" />
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/namePhoneBtn"
+            android:layout_width="324dp"
+            android:layout_height="55dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="left|center"
+            android:hint="Taom nomi"
+            android:padding="16dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toTopOf="@id/nameFeaturesBtn"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guide_line4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        <EditText
+            android:id="@+id/nameFeaturesBtn"
+            android:layout_width="324dp"
+            android:layout_height="365dp"
+            android:background="@drawable/edit_shape"
+            android:gravity="left|top"
+            android:hint="Taom tayyorlash tartibi"
+            android:padding="18sp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/nameFeaturesBtn" />
 
-    <EditText
-        android:id="@+id/nameFeaturesBtn"
-        android:layout_width="324dp"
-        android:layout_height="365dp"
-        android:background="@drawable/edit_shape"
-        android:gravity="left|top"
-        android:hint="Taom tayyorlash tartibi"
-        android:padding="18sp"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toTopOf="@id/guide_line4"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guide_line3" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addContactBtn"
+            android:layout_width="136dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/phone_btn_shape"
+            android:text="Add"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="@+id/nameFeaturesBtn"
+            app:layout_constraintTop_toBottomOf="@+id/nameFeaturesBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/addContactBtn"
-        android:layout_width="136dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="11dp"
-        android:background="@drawable/phone_btn_shape"
-        android:text="Add"
-        android:textAllCaps="false"
-        android:textColor="@color/black"
-        android:textSize="15sp"
-        android:textStyle="normal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintRight_toRightOf="@id/nameFeaturesBtn"
-        app:layout_constraintTop_toBottomOf="@id/guide_line4" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

@@ -21,4 +21,9 @@ class MainFastFoodActivity : AppCompatActivity() {
             startActivity(Intent(this, AllFastFoodActivity::class.java))
         }
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finish()
+    }
 }

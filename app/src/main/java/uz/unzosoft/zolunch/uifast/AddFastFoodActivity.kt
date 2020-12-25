@@ -59,7 +59,6 @@ class AddFastFoodActivity : AppCompatActivity() {
                     listFastFood.add(fastFood)
                     SharedPreferenceUI.clearData()
                     SharedPreferenceUI.fastFood = gson.toJson(listFastFood)
-                    startActivity(Intent(this, AllFastFoodActivity::class.java))
                     finish()
                 }
             } else {

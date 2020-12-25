@@ -19,4 +19,10 @@ class MainPhoneActivity : AppCompatActivity() {
             startActivity(Intent(this, PhonesActivity::class.java))
         }
     }
+
+    override fun onBackPressed() {
+        finish()
+        super.onBackPressed()
+
+    }
 }
