@@ -62,8 +62,8 @@ class AddPhoneActivity : AppCompatActivity() {
                     listPhone.add(phoneU)
                     SharedPreferenceUI.clearData()
                     SharedPreferenceUI.phoneString = gson.toJson(listPhone)
-                    startActivity(Intent(this, MainPhoneActivity::class.java))
                     Log.d("PHONE", "onCreate:${listPhone.toString()}")
+                    finish()
                 }
 
 

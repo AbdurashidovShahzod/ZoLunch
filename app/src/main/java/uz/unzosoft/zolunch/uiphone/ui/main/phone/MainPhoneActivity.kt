@@ -20,9 +20,4 @@ class MainPhoneActivity : AppCompatActivity() {
         }
     }
 
-    override fun onBackPressed() {
-        finish()
-        super.onBackPressed()
-
-    }
 }
