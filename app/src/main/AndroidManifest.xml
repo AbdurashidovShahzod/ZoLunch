@@ -11,8 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZoLunch">
-        <activity android:name=".uiphone.ui.main.mainphoneui.AddPhoneActivityUi"></activity>
-        <activity android:name=".uiphone.ui.main.mainphoneui.MainPhoneActivityUi" />
+        <activity android:name=".uiphone.ui.main.mainphoneui.TypesActivityUi"></activity>
+        <activity android:name=".uiphone.ui.main.mainphoneui.AddPhoneActivityUi" />
+        <activity android:name=".uiphone.ui.main.mainphoneui.MainPhoneActivityUi" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".uiphone.ui.main.phone.DescriptionPhoneActivity" />
         <activity android:name=".uiphone.ui.main.phone.PhoneListActivity" />
         <activity android:name=".uiphone.ui.main.phone.PhonesActivity" />
@@ -20,11 +27,7 @@
         <activity android:name=".uiphone.ui.main.viewmodel.PhoneTypesActivity" />
         <activity android:name=".uiphone.ui.main.phone.AddPhoneActivity" />
         <activity android:name=".uiphone.ui.main.phone.MainPhoneActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".uifast.MainFastFoodActivity" />
         <activity android:name=".uifast.AddFastFoodActivity" />
